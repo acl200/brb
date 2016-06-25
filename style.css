@@ -6,31 +6,28 @@
 
 /*--- main navigation ---*/
 
-.main-navigation li:first-child{padding-left:20px;outline:1px solid gold}
+
 .main-navigation li{
-	padding-left: 0;
 	
 
 	float:left;
 	font-size: 0;
+	outline:1px solid gold;
 }
 
 .main-navigation {
 	font-size: 0;
-	margin-left:0;
-	padding-left: 0;
+	
 	
 	float:left;
 	font-size: 0;
 }
 
-bosdy{background: url(img/JhfJ5StsCEY.jpg);}
 
 .main-navigation a{
 	
-	padding-right: 35px;
-	padding-left: 0;
-
+	display:inline-block;
+	outline:1px solid red;
 	text-decoration: none;
 	text-transform: uppercase;
 
