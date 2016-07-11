@@ -40,8 +40,28 @@ body{
 	line-height: 20px;
 	}
 
+.main-navigation .active a {
+  position: relative;
+}
 
+.main-navigation a:hover {
+  background: #242424;
+}
+.main-navigation .active a:hover {
+  background: none;
+}
+.main-navigation .active a:after {
+  content: "";
 
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+
+  height: 5px;
+
+  background: white;
+}
 .main-navigation a{
 	display:block;
 	padding:25px 20px;
@@ -62,3 +82,123 @@ body{
 		max-width: 140px;
 		float:right;}
 
+.login{
+	position: relative;
+	display:inline-block;
+	vertical-align: top;
+    padding: 25px 20px;
+    padding-left: 50px;
+
+    font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.login:hover {
+  background: #242424;
+}
+.login:before {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("img/sprite.png") no-repeat;
+  background-position: 0 -212px;
+  opacity: .3;
+}
+.login:hover:before {
+  opacity: .3;
+}
+
+.logo{
+	width:368px;
+	height:204px;
+	margin:0 auto;
+	margin-bottom:25px;
+}
+.features-item:last-child{margin-right:0;}
+
+.features-item{
+	text-align: center;
+	margin-right:20px;
+	
+	width:300px;
+	float:left;
+	margin-bottom:85px;
+}
+
+.features-title{
+	position: relative;
+	padding-bottom:50px;
+	margin-bottom:30px;
+	font-size: 30px;
+  	line-height: 42px;
+
+}	
+.features-title:after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background: #fff;
+  transform: rotate(45deg);
+}
+.features-item p {
+	margin: 10px;
+	
+	}
+.index-content {
+	color:black;
+	  margin-bottom: 35px;
+  padding: 50px 80px;
+  background: #f8f5f2 url("img/pattern-white.jpg");
+}
+.content-column-left {
+  width: 350px; 
+}
+
+.content-column-right {
+  width: 300px;
+}
+
+.content-column-left {
+  float: left;
+}
+
+.content-column-right {
+  float: right;
+}	
+
+.content-column-title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.news-preview li {
+  margin-bottom: 25px;
+}
+.news-preview time {
+  text-transform: none;
+}
